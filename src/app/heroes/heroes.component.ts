@@ -9,6 +9,11 @@ import{Hero} from '../hero'
 })
 export class HeroesComponent implements OnInit {
   heroes = HEROES;
+  selectedHero:Hero
+
+  onSelect(hero:Hero){
+    this.selectedHero=hero;
+  }
 
 
   constructor() { }
